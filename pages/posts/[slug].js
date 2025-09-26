@@ -48,7 +48,7 @@ postBy(slug: $slug) { id title content }
 export default function Post({ post, headerMenu, footerMenu }) {
   return (
     <>
-      <Header header={headerMenu} />
+      {/* <Header header={headerMenu} /> */}
 
 
       <article style={{ padding: '1rem' }}>
@@ -57,7 +57,7 @@ export default function Post({ post, headerMenu, footerMenu }) {
       </article>
 
 
-      <Footer footer={footerMenu} />
+      {/* <Footer footer={footerMenu} /> */}
     </>
   );
 }
