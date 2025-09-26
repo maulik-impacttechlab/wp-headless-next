@@ -1,7 +1,7 @@
 // components/NavMenu.js
 import Link from "next/link";
 
-const SITE_HOST = "dd-creation.local";
+const SITE_HOST = "deek57.sg-host.com";
 
 function isInternal(url) {
   if (!url) return false;

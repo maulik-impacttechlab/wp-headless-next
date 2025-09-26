@@ -35,7 +35,7 @@ postBy(slug: $slug) { id title content }
 
 
     return {
-      props: { post: postBy, header: siteData.header, footer: siteData.footer },
+      props: { post: postBy, headerMenu: siteData.headerMenu, footerMenu: siteData.footerMenu },
       revalidate: 10,
     };
   } catch (err) {
@@ -45,10 +45,10 @@ postBy(slug: $slug) { id title content }
 }
 
 
-export default function Post({ post, header, footer }) {
+export default function Post({ post, headerMenu, footerMenu }) {
   return (
     <>
-      <Header header={header} />
+      <Header header={headerMenu} />
 
 
       <article style={{ padding: '1rem' }}>
@@ -57,7 +57,7 @@ export default function Post({ post, header, footer }) {
       </article>
 
 
-      <Footer footer={footer} />
+      <Footer footer={footerMenu} />
     </>
   );
 }

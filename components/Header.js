@@ -13,7 +13,7 @@ export default function Header({ menu }) {
           <Link className="navbar-brand" href="/" title="DD Creation">
             {/* Replace src with your WP logo or query it via ACF if you want dynamic */}
              <Image
-              src="https://dd-creation.local/wp-content/uploads/2025/09/e9c8950b9e3e0d5a8b5b5f5a8a9c840e2ffb817c-1.webp"
+              src="https://deek57.sg-host.com/wp-content/uploads/2025/09/e9c8950b9e3e0d5a8b5b5f5a8a9c840e2ffb817c-1.webp"
               width={69}
               height={80}
               alt="DD Creation Logo"
