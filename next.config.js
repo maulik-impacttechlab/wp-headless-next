@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   images: {
-    domains: ['dd-creation.local'], // 👈 add your WordPress host here
+    remotePatterns: [
+      { protocol: 'https', hostname: 'deek57.sg-host.com', pathname: '/**' },
+      // add dd-creation.local too for local dev if you want
+    ],
   },
 };
-
-module.exports = nextConfig;
